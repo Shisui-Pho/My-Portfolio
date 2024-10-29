@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phiwokwakhe | Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="screen" href="styles/main.css">
+    <link rel="stylesheet" media="print"  href="styles/print.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+     <!-- Font Awesome CDN for social icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -119,65 +121,91 @@
 
 
    <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects">
     <h2>Projects</h2>
 
     <!-- Mathematical Sets Library -->
     <div class="project">
         <h3>Mathematical Sets Library</h3>
-        <p>Developed a library capable of advanced set operations, including:
-            <ul>
-                <li>Parsing set strings to create sets with sorted, duplicate-free elements while preserving nesting.</li>
-                <li>Supporting operations such as Unions, Intersections, Differences, Complements, and more.</li>
-                <li>A dynamic set collection class for tracking sets with automatic naming and no user interaction.</li>
-                <li>Custom object creation for sets, adaptable to various data types based on input format and delimiters.</li>
-            </ul>
-            This project leverages algorithms, data structures, and advanced parsing techniques.
-        </p>
-        <p><a href="https://github.com/Shisui-Pho/Advance-Custom-Set" target="_blank">View on GitHub</a></p>
+        <p>Developed a library capable of advanced set operations, including:</p>
+        <div class="project-details">
+            <p><span>•</span> Parsing set strings to create sets with sorted, duplicate-free elements while preserving nesting.</p>
+            <p><span>•</span> Supporting operations such as Unions, Intersections, Differences, Complements, and more.</p>
+            <p><span>•</span> A dynamic set collection class for tracking sets with automatic naming and no user interaction.</p>
+            <p><span>•</span> Custom object creation for sets, adaptable to various data types based on input format and delimiters.</p>
+        </div>
+        <p>This project leverages algorithms, data structures, and advanced parsing techniques.</p>
+        <p><a href="https://github.com/shisui-pho/Advance-Custom-Set" target="_blank">View on GitHub</a></p>
     </div>
 
     <!-- Book Inventory System -->
     <div class="project">
         <h3>Book Inventory System (Collaborative Project)</h3>
-        <p>Collaborated on a system for managing book inventory, focusing on backend development and implementing:
-            <ul>
-                <li>Factory Pattern (with SRP) for instance creation.</li>
-                <li>Command Pattern (with ISP) to separate commands from implementation.</li>
-                <li>Result Pattern (with DIP) for handling results and dependencies.</li>
-            </ul>
-            Employed design patterns and principles to achieve a well-structured, maintainable backend.
-        </p>
-        <p><a href="https://github.com/Shisui-Pho/Book-Inventory-System" target="_blank">View on GitHub</a></p>
+        <p>Collaborated on a system for managing book inventory, focusing on backend development and implementing:</p>
+        <div class="project-details">
+            <p><span>•</span> Factory Pattern (with SRP) for instance creation.</p>
+            <p><span>•</span> Command Pattern (with ISP) to separate commands from implementation.</p>
+            <p><span>•</span> Result Pattern (with DIP) for handling results and dependencies.</p>
+        </div>
+        <p>Employed design patterns and principles to achieve a well-structured, maintainable backend.</p>
+        <p><a href="https://github.com/shisui-pho/book-inventory-system" target="_blank">View on GitHub</a></p>
     </div>
 
     <!-- Tetris Game -->
     <div class="project">
         <h3>Tetris Game</h3>
-        <p>Implemented a classic Tetris game in C# using WPF, featuring:
-            <ul>
-                <li>Multidimensional arrays to handle the grid and piece rotations.</li>
-                <li>Fundamental game logic to replicate traditional Tetris mechanics.</li>
-            </ul>
-            This project showcases both foundational game development skills and object-oriented programming.
-        </p>
-        <p><a href="https://github.com/Shisui-Pho/Tetris" target="_blank">View on GitHub</a></p>
+        <p>Implemented a classic Tetris game in C# using WPF, featuring:</p>
+        <div class="project-details">
+            <p><span>•</span> Multidimensional arrays to handle the grid and piece rotations.</p>
+            <p><span>•</span> Fundamental game logic to replicate traditional Tetris mechanics.</p>
+        </div>
+        <p>This project showcases both foundational game development skills and object-oriented programming.</p>
+        <p><a href="https://github.com/shisui-pho/Tetris" target="_blank">View on GitHub</a></p>
     </div>
 </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">your LinkedIn profile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername">your GitHub profile</a></p>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
+  <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div class="contact-details">
+                <p>Email</p>
+                <a href="mailto:phiwokwakhe299@gmail.com">phiwokwakhe299@gmail.com</a>
+            </div>
+        </div>
+        <div class="contact-item github-contact">
+            <span class="contact-icon">🐙</span>
+            <div class="contact-details">
+                <p>GitHub</p>
+                <a href="https://github.com/shisui-pho" target="_blank">Shisui-Pho</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div class="contact-details">
+                <p>LinkedIn</p>
+                <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank">Phiwokwakhe Khathwane</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Phiwokwakhe Khathwane. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://github.com/shisui-pho" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
 
 </body>
 </html>
