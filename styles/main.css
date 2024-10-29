@@ -9,40 +9,41 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f0f4f8; /* Soft background color */
+    background-color: #f0f2f5; /* Subtle gray for page background */
 }
 
 /* Navigation Bar */
 #navbar {
-    background: #222;
-    color: #fff;
+    background: #2c3e50; /* Dark blue-gray */
     padding: 1em 0;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #navbar a {
-    color: #fff;
+    color: #ecf0f1; /* Light gray for readability */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-#navbar a:hover, .project h3:hover {
-    color: #f39c12; /* Accent color */
+#navbar a:hover {
+    color: #f39c12; /* Accent orange color */
 }
 
-/* Enhanced Header Section Styling */
+/* Header Section */
 #main-header {
-    background-image: url('../images/me_2nd place.jpg');
+    background-image: url('../images/me_2nd place.jpg'); /* Full background image */
     background-size: cover;
     background-position: center;
     height: 400px;
     position: relative;
-    color: white;
+    color: #ffffff;
     text-align: center;
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
+    animation: fadeIn 1.2s ease-out;
 }
 
 #main-header::before {
@@ -60,24 +62,87 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(to bottom right, rgba(44, 62, 80, 0.8), rgba(52, 73, 94, 0.7)); /* Dark overlay */
 }
 
+/* Header Content Styling */
 .header-content {
     position: relative;
     z-index: 1;
 }
 
 .header-content h1 {
-    font-size: 2.5em;
+    font-size: 2.7em;
     margin: 0;
     font-weight: 600;
+    color: #ecf0f1; /* Light gray text */
 }
 
 .header-content p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 10px;
     font-weight: 300;
+    color: #bdc3c7; /* Softer gray */
+}
+
+/* Subtle Animation Text */
+.header-content h1::after {
+    content: " | Pursuing Innovation";
+    font-size: 0.6em;
+    color: #f39c12; /* Accent color */
+    animation: slideIn 3s ease-in-out infinite alternate;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-In Animation for Subtle Text */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Icon Styling */
+.icon {
+    font-size: 0.9em;
+    margin-left: 8px;
+    color: #f39c12; /* Accent color */
+}
+
+/* Social Media Links Styling */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #f39c12; /* Accent color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 /* Section Styles */
@@ -87,7 +152,7 @@ section {
     margin: auto;
 }
 
-/* About Me Section */
+/* About Me Section Styling */
 #about {
     background-color: #f9f9f9;
     padding: 60px 20px;
@@ -110,41 +175,24 @@ section {
     line-height: 1.6;
 }
 
-/* Skills */
-#skills {
-    background: #fff;
-}
-
-.skills-container {
+/* About Me Section Styling with Photo */
+.about-content {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
 }
 
-.skill-category h3 {
-    color: #444;
-    margin-bottom: 10px;
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.skill-category ul {
-    list-style-type: none;
-}
-
-/* Projects */
-#projects {
-    background: #fafafa;
-}
-
-.project h3 {
-    font-size: 1.5em;
-    color: #222;
-}
-
-/* Achievements Section */
+/* Achievements Section Styling */
 #achievements {
     background-color: #fff;
     padding: 60px 20px;
-    text-align: center;
 }
 
 #achievements h2 {
@@ -166,12 +214,134 @@ section {
 }
 
 #achievements ul li::before {
-    content: '🏅';
+    content: '🏅'; /* Achievement icon */
     position: absolute;
     left: 0;
 }
 
-/* Contact */
+/* Skills Section */
+#skills {
+    background: #f8f8f8;
+    padding: 60px 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#skills h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Skills Card Layout */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-category {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: scale(1.05);
+}
+
+.skill-category h3 {
+    color: #444;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    position: relative;
+}
+
+/* Badge Styling */
+.skill-badge {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    margin-left: 8px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Updated badge styling for consistent width and alignment */
+.skill-category ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.skill-badge {
+    font-size: 0.85em;
+    background-color: #eee;
+    color: #333;
+    border-radius: 5px;
+    padding: 3px 8px;
+    min-width: 80px; /* Set a minimum width for uniform size */
+    text-align: center; /* Center-align text within badge */
+}
+
+/* Responsive for Skills Section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#projects .project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project h3 {
+    color: #444;
+}
+
+#projects .project p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#projects .project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Contact Section */
 #contact {
     background: #f4f4f4;
 }
@@ -184,7 +354,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .skills-container {
         flex-direction: column;
