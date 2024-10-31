@@ -1,0 +1,31 @@
+
+/* Achievements Section Styling */
+#achievements {
+    /*background-color: #fff;*/
+    padding: 60px 20px;
+}
+
+#achievements h2 {
+    font-size: 2em;
+    color: #333;
+    /*margin-bottom: 20px;*/
+}
+
+#achievements ul {
+    list-style: none;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#achievements ul li {
+    margin: 10px 0;
+    padding-left: 15px;
+    text-align: center;
+    position: relative;
+}
+
+#achievements ul li::before {
+    content: '🏅'; /* Achievement icon */
+    position: absolute;
+    left: 0;
+}
