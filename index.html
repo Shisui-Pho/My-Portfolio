@@ -3,248 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phiwokwakhe Khathwane| Portfolio</title>
-
-    <!--Styles sheets-->
-    <link rel="stylesheet" media="screen" href="styles/main.css">
-    <link rel="stylesheet" media="screen" href="styles/about.css">
-    <link rel="stylesheet" media="screen" href="styles/achievements.css">
-    <link rel="stylesheet" media="screen" href="styles/skills.css">
-    <link rel="stylesheet" media="screen" href="styles/projects.css">
-
-    <link rel="stylesheet" media="print"  href="styles/print.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-     <!-- Font Awesome CDN for social icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Phiwokwakhe Khathwane | Programmer Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Code Background -->
+    <div class="code-bg"></div>
 
     <!-- Navigation -->
     <nav id="navbar">
-        <a href="#about">About Me</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="logo"><i class="fas fa-terminal"></i> Phiwokwakhe</div>
+        <div class="nav-links">
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <button id="theme-toggle" title="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
     </nav>
 
-<!-- Header Section -->
-<header id="main-header">
-    <div class="header-content">
-        <!-- Mathematical/Code Icon Next to Name -->
-        <h1>Phiwokwakhe Khathwane <span class="icon">∑</span></h1>
-        <p>Computer Science & Mathematics Major | Aspiring Software Developer</p>
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank">LinkedIn</a>
-            <a href="https://github.com/shisui-pho" target="_blank">GitHub</a>
-            <a href="mailto:phiwokwakhe299@gmail.com">Email</a>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-content">
+            <h1>
+                <span class="code-hello">Hello, World!</span>
+                <br>
+                I'm <span class="highlight">Phiwokwakhe Khathwane</span>
+            </h1>
+            <p class="subtitle">Software Developer & Problem Solver</p>
+            <div class="social-links">
+                <a href="https://github.com/shisui-pho" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:phiwokwakhe299@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="animated-terminal">
+                <span class="prompt">$</span> <span class="typed"></span>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-
-    <!-- About Me Section -->
-    <!--<section id="about">-->
-
-<section id="about">
-    <h2>About Me</h2>
-    <p> Hello! I'm Phiwokwakhe, a Bachelor of Science student in Information Technology, 
-        majoring in Computer Science and Mathematics. I have a strong interest in exploring 
-        complex problems in software engineering and mathematics, particularly through mathematical modeling, which is an area I’m eager 
-        to dive deeper into as I develop my skills.</p>
-
-    <p> I enjoy finding innovative solutions to challenging problems, especially those that involve 
-        algorithms, data structures, and modeling techniques. Alongside my core academic pursuits, 
-        I have practical skills in database management, from working with smaller systems like Microsoft
-        Access to more robust platforms like SQL Server. Additionally, I use MATLAB/Octave as a tool to sharpen my modeling skills, which allows me to 
-        apply theoretical knowledge to practical scenarios.
-    </p>
-
-    <p> My journey in tech has been both challenging and rewarding, and I look forward to furthering
-         my knowledge and contributing meaningfully to impactful projects in the near future.
-    </p>
-</section>
-<!-- Achievements Section -->
-<section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-        <li>3rd Place in Academics, House Abraham Fischer - 2023</li>
-        <li>1st Place in Academics, House Abraham Fischer - 2024</li>
-        <li>1st Place in Academics, Natural and Agricultural Science Faculty, West College (UFS)</li>
-        <li>2nd Place in Top 50 Academic Achievers, West College (UFS)</li>
-    </ul>
-</section>
-
-
-<!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <!-- Programming Languages -->
-        <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <ul>
-                <li>HTML <span class="skill-badge">Advanced</span></li>
-                <li>CSS <span class="skill-badge">Advanced</span></li>
-                <li>C# <span class="skill-badge">Advanced</span></li>
-                <li>SQL <span class="skill-badge">Intermediate</span></li>
-            </ul>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/me_2nd place.jpg" alt="Profile Photo" class="profile-photo">
+            <div>
+                <p>
+                    <span class="code-tag">&lt;bio&gt;</span>
+                    I'm a passionate programmer and mathematics enthusiast, always eager to solve problems and build cool things. I love exploring algorithms, data structures, and turning ideas into code.
+                    <span class="code-tag">&lt;/bio&gt;</span>
+                </p>
+                <p>
+                    <span class="code-tag">&lt;funFact&gt;</span>
+                    I think in <span class="highlight">pseudo-code</span> and sometimes dream in <span class="highlight">C#</span>!
+                    <span class="code-tag">&lt;/funFact&gt;</span>
+                </p>
+            </div>
         </div>
+    </section>
 
-        <!-- Tools & Technologies -->
-        <div class="skill-category">
-            <h3>Tools & <br> Technologies</h3>
-            <ul>
-                <li>Git <span class="skill-badge">Intermediate</span></li>
-                <li>MATLAB <span class="skill-badge">Beginner</span></li>
-                <li>.Net <span class="skill-badge">Intermediate</span></li>
-                <li>Azure/SQL Server <span class="skill-badge">Intermediate</span></li>
-            </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <ul>
+                    <li>HTML <span class="skill-badge">Advanced</span></li>
+                    <li>CSS <span class="skill-badge">Advanced</span></li>
+                    <li>C# <span class="skill-badge">Advanced</span></li>
+                    <li>SQL <span class="skill-badge">Intermediate</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Tech</h3>
+                <ul>
+                    <li>Git <span class="skill-badge">Intermediate</span></li>
+                    <li>MATLAB <span class="skill-badge">Beginner</span></li>
+                    <li>.NET <span class="skill-badge">Intermediate</span></li>
+                    <li>Azure/SQL Server <span class="skill-badge">Intermediate</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Concepts</h3>
+                <ul>
+                    <li>Data Structures <span class="skill-badge">Advanced</span></li>
+                    <li>Algorithms <span class="skill-badge">Advanced</span></li>
+                    <li>Design Patterns <span class="skill-badge">Advanced</span></li>
+                    <li>Database Design <span class="skill-badge">Advanced</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                <ul>
+                    <li>Problem-Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Adaptability</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Core Concepts -->
-        <div class="skill-category">
-            <h3>Core Concepts</h3>
-            <ul>
-                <li>Data Structures <span class="skill-badge">Advanced</span></li>
-                <li>Algorithms <span class="skill-badge">Advanced</span></li>
-                <li>Design Patterns <span class="skill-badge">Advanced</span></li>
-                <li>Database design <span class="skill-badge">Advanced</span></li>
-            </ul>
-        </div>
-
-        <!-- Soft Skills -->
-        <div class="skill-category">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem-Solving</li>
-                <li>Team Collaboration</li>
-                <li>Adaptability</li>
-                <li>Communication</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-
-        <!-- House Abraham Fischer Boetapele -->
-        <div class="experience-item">
-            <h3>House Abraham Fischer Boetapele</h3>
-            <p class="role"><strong>Volunteered House Tutor (C# Programming)</strong></p>
-            <p><em>February 2024 - Present (1 year)</em></p>
-            <p><em>Bloemfontein, Free State, South Africa</em></p>
-            <p>As a volunteer house tutor, I provide support and guidance to first-year students in mastering the fundamentals of C# programming. My role includes teaching core concepts such as C# syntax, object-oriented programming (OOP), and problem-solving techniques. I assist students with hands-on practice in key data structures, including one-dimensional, two-dimensional, and jagged arrays, helping them build a solid foundation for their programming journey.</p>
+        <div class="experience-timeline">
+            <!-- Example Timeline Item -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>House Abraham Fischer Boetapele</h3>
+                    <p class="role"><strong>Volunteered House Tutor (C# Programming)</strong></p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> Feb 2024 - Present</p>
+                    <p>Guided first-year students in C# fundamentals, OOP, and data structures. Helped them debug and build confidence in code!</p>
+                </div>
+            </div>
+            <!-- Placeholder for more experience -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Quantify YourFuture</h3>
+                    <p class="role"><strong>Intern</strong></p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> Jan 2025 - Feb 2025</p>
+                    <p>Worked on real-world banking case studies, data cleaning, EDA, and modeling. Learned to turn data into insights!</p>
+                </div>
+            </div>
+            <!-- Add more timeline items as needed -->
         </div>
-
-        <!-- Quantify YourFuture Internship -->
-        <div class="experience-item">
-            <h3>Quantify YourFuture</h3>
-            <p class="role"><strong>Intern</strong></p>
-            <p><em>January 2025 - February 2025 (1 month)</em></p>
-            <p><em>Remote, South Africa</em></p>
-            <p>Worked on real-world banking case studies involving Standard Bank, Nedbank, Absa, and FNB/FirstRand, focusing on data-driven solutions. Gained hands-on experience in problem framing, data cleaning, transformation, exploratory data analysis (EDA), visualization, and modeling. Applied analytical techniques to extract insights and build data-driven strategies. Developed critical thinking, creativity, communication, and collaboration skills while analyzing complex datasets to solve industry-relevant challenges.</p>
-        </div>
-
     </section>
 
-   <!-- Projects Section -->
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <!-- Mathematical Sets Library -->
-    <div class="project">
-        <h3>Mathematical Sets Library</h3>
-        <p class="subheader"><em>Developed a library capable of advanced set operations, including:</em></p>
-        <div class="project-details">
-            <p><span>•</span> Parsing set strings to create sets with sorted, duplicate-free elements while preserving nesting.</p>
-            <p><span>•</span> Supporting operations such as Unions, Intersections, Differences, Complements, and more.</p>
-            <p><span>•</span> A dynamic set collection class for tracking sets with automatic naming and no user interaction.</p>
-            <p><span>•</span> Custom object creation for sets, adaptable to various data types based on input format and delimiters.</p>
-        </div>
-        <p>This project leverages algorithms, data structures, and advanced parsing techniques.</p>
-        <p class="project-link"><a href="https://github.com/Shisui-Pho/Sets-Library" target="_blank">View on GitHub</a></p>
-    </div>
-
-    <!-- Book Inventory System -->
-    <div class="project">
-        <h3>Book Inventory System (Collaborative Project)</h3>
-        <p class="subheader"><em>Collaborated on a system for managing book inventory, focusing on backend development and implementing:</em></p>
-        <div class="project-details">
-            <p><span>•</span> Factory Pattern (with SRP) for instance creation.</p>
-            <p><span>•</span> Command Pattern (with ISP) to separate commands from implementation.</p>
-            <p><span>•</span> Result Pattern (with DIP) for handling results and dependencies.</p>
-            <p><span>•</span> Strategy Pattern for flexible command creation strategies specific to Access and SQL Server databases.</p>
-            <p><span>•</span> Additional design pattern added in the latest update, enhancing system flexibility and scalability.</p>
-        </div>
-        <p>Employed design patterns and principles to achieve a well-structured, maintainable backend.</p>
-        <p class="project-link"><a href="https://github.com/shisui-pho/book-inventory-system" target="_blank">View on GitHub</a></p>
-    </div>
-
-    <!-- Tetris Game -->
-    <div class="project">
-        <h3>Tetris Game</h3>
-        <p class="subheader"><em>Implemented a classic Tetris game in C# using WPF, featuring:</em></p>
-        <div class="project-details">
-            <p><span>•</span> Multidimensional arrays to handle the grid and piece rotations.</p>
-            <p><span>•</span> Fundamental game logic to replicate traditional Tetris mechanics.</p>
-        </div>
-        <p>This project showcases both foundational game development skills and object-oriented programming.</p>
-        <p class="project-link"><a href="https://github.com/shisui-pho/Tetris" target="_blank">View on GitHub</a></p>
-    </div>
-</section>
-
-
-
-  <!-- Contact Section -->
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-        <div class="contact-item">
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-            <div class="contact-details">
-                <p>Email</p>
-                <a href="mailto:phiwokwakhe299@gmail.com">phiwokwakhe299@gmail.com</a>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-cubes"></i></div>
+                <h3>Mathematical Sets Library</h3>
+                <p>Advanced set operations, parsing, and dynamic set collections. <span class="project-lang">C#</span></p>
+                <a href="https://github.com/Shisui-Pho/Sets-Library" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-book"></i></div>
+                <h3>Book Inventory System</h3>
+                <p>Collaborative backend with design patterns for book management. <span class="project-lang">C#</span></p>
+                <a href="https://github.com/shisui-pho/book-inventory-system" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                <h3>Tetris Game</h3>
+                <p>Classic Tetris in WPF, using multidimensional arrays and OOP. <span class="project-lang">C#</span></p>
+                <a href="https://github.com/shisui-pho/Tetris" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Placeholder for more projects -->
+            <div class="project-card placeholder">
+                <div class="project-icon"><i class="fas fa-plus"></i></div>
+                <h3>Your Next Project</h3>
+                <p>Coming soon...</p>
             </div>
         </div>
-        <div class="contact-item">
-            <span class="contact-icon"><i class="fab fa-github"></i></span>
-            <div class="contact-details">
-                <p>GitHub</p>
-                <a href="https://github.com/shisui-pho" target="_blank">KhathwaneP</a>
-            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required autocomplete="off">
+            <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+        <div class="contact-links">
+            <a href="mailto:phiwokwakhe299@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/shisui-pho" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
+    </section>
 
-        <div class="contact-item linkedIn-contact">
-            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
-            <div class="contact-details">
-                <p>LinkedIn</p>
-                <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank">Phiwokwakhe Khathwane</a>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Phiwokwakhe Khathwane. All Rights Reserved.</p>
+    </footer>
 
+    <!-- Scripts for animation and interactivity -->
+    <script>
+    // Animated terminal typing
+    const typedText = [
+        "dotnet run Portfolio.cs",
+        "Loading projects...",
+        "Welcome, visitor! >"
+    ];
+    let typedIndex = 0, charIndex = 0;
+    function typeLine() {
+        const el = document.querySelector('.typed');
+        if (!el) return;
+        if (charIndex < typedText[typedIndex].length) {
+            el.textContent += typedText[typedIndex][charIndex++];
+            setTimeout(typeLine, 60);
+        } else {
+            typedIndex = (typedIndex + 1) % typedText.length;
+            charIndex = 0;
+            setTimeout(() => { el.textContent = ""; typeLine(); }, 1200);
+        }
+    }
+    document.addEventListener("DOMContentLoaded", typeLine);
 
+    // Section reveal on scroll
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll("section");
+        const revealSection = () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add("visible");
+                }
+            });
+        };
+        window.addEventListener("scroll", revealSection);
+        revealSection();
+    });
 
-<footer>
-    <p>&copy; 2025 <a href="https://github.com/shisui-pho" style="color: #ccc">Phiwokwakhe Khathwane</a>. All Rights Reserved.</p>
-    <div class="social-icons">
-        <a href="https://github.com/shisui-pho" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://za.linkedin.com/in/phiwokwakhe-khathwane-887175245?trk=profile-badge" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    </div>
-</footer>
+    // Theme toggle
+    document.getElementById('theme-toggle').onclick = function() {
+        document.body.classList.toggle('light-theme');
+        this.querySelector('i').classList.toggle('fa-moon');
+        this.querySelector('i').classList.toggle('fa-sun');
+    };
 
-
+    // Prevent form submission (placeholder)
+    document.querySelector('.contact-form').onsubmit = e => {
+        e.preventDefault();
+        alert('Message sent! (Not really, this is a placeholder.)');
+    };
+    </script>
 </body>
 </html>
