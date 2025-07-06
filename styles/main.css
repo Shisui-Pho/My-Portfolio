@@ -203,11 +203,13 @@ section.visible {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
     padding: 24px 18px;
-    min-width: 220px;
+    min-width: 240px;
     max-width: 260px;
     flex: 1 1 220px;
     margin: 0.5em 0;
     transition: transform 0.3s, box-shadow 0.3s;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .skill-category:hover {
     transform: translateY(-5px) scale(1.03) rotate(-1deg);
@@ -240,6 +242,60 @@ section.visible {
     font-size: 0.85em;
     font-weight: bold;
     margin-left: 10px;
+}
+.softskills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em 1.2em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.softskills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.05em;
+    background: rgba(0,0,0,0.07);
+    border-radius: 6px;
+    padding: 0.3em 0.6em;
+    transition: background 0.2s;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    min-width: 0;
+    flex: 1 1 0;
+}
+
+/* Make only Soft Skills and Achievements wider and more spacious */
+.softskills-category,
+.achievements-category {
+    min-width: 320px;
+    max-width: 420px;
+    padding: 32px 28px;
+    font-size: 1.13em;
+}
+
+/* Add more vertical space between achievements */
+.achievements-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    margin-bottom: 1.3em; /* Increased space between items */
+    font-size: 1.05em;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    padding: 0.4em 0.7em;
+}
+
+/* Responsive: single column for small screens */
+@media (max-width: 700px) {
+    .softskills-list {
+        grid-template-columns: 1fr;
+    }
+    .skill-category {
+        min-width: 180px;
+    }
 }
 
 /* --- Experience Timeline --- */
@@ -373,6 +429,49 @@ section.visible {
 }
 .contact-links a:hover {
     color: var(--accent);
+}
+
+/* --- Fun Contact Terminal */
+.fun-contact-terminal {
+    background: var(--code);
+    color: var(--accent);
+    font-family: 'Fira Mono', monospace;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    max-width: 420px;
+    margin: 0 auto 1.5em auto;
+    padding: 1.2em 1.5em 1em 1.5em;
+    position: relative;
+}
+.terminal-bar {
+    display: flex;
+    gap: 0.4em;
+    margin-bottom: 0.7em;
+}
+.terminal-bar .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.terminal-bar .red { background: #ff5f56; }
+.terminal-bar .yellow { background: #ffbd2e; }
+.terminal-bar .green { background: #27c93f; }
+.terminal-content {
+    font-size: 1.08em;
+    line-height: 1.7;
+}
+.terminal-content .prompt {
+    color: var(--accent2);
+    margin-right: 0.4em;
+}
+.terminal-content .cmd a {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.terminal-content .cmd a:hover {
+    color: var(--accent2);
 }
 
 /* --- Footer --- */
